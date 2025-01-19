@@ -60,9 +60,13 @@ iv.	The Logistic Regression model was trained and the performance of the model w
 The performance matrices are briefly explained as follows:
 
 • Accuracy: The percentage of instances among all cases that were correctly predicted.
+
 • Precision: The percentage of all positive predictions that are actually positive.
+
 • Recall: The percentage of all real positives that were true positive predictions.
+
 • F1 Score: The precision and recall harmonic means.
+
 • ROC AUC Score: The model's ability to differentiate between classes is represented by the area under the ROC curve.
 
 ![image](https://github.com/user-attachments/assets/e56dd809-efe7-4b23-950c-1fb72b0ce496)
@@ -82,10 +86,15 @@ Table 1: The summary of performance metrics for the Logistic Regression Model
 ![image](https://github.com/user-attachments/assets/1e313ec9-c0c4-4cf6-8fd5-671d8ab31c52)
 
 The outcomes of the logistic regression show that the model did a good job of predicting whether or not people would click on the advertisements. Here is a quick analysis of every metric:
+
 97% Accuracy: This indicates that 97% of the model's predictions are accurate. Although high accuracy indicates the model's effectiveness, it does not distinguish between different kinds of errors.
+
 Precision (0.9608): 96.08% of the predicted positive cases (ads clicked) are actually positives, according to precision. High precision indicates a low false positive rate, indicating that the model does an excellent job of not mislabeling non-clicked ads as clicked.
+
 Recall (0.98): With 98% of actual clicked ads properly detected, recall, also known as sensitivity, gauges how well the model can detect real positives. A high recall rate means that the model hardly ever misses actual clicked ads due to a low false negative rate.
+
 F1 Index (0.9703): The harmonic mean of recall and precision, which strikes a balance between the two, is the F1 score. With a score of 0.9703, the model appears to be in good equilibrium and performs well in terms of recall and precision.
+
 ROC AUC (0.9764): Excellent discriminating capacity is shown by the Receiver Operating Characteristic Area Under the Curve (ROC AUC) score of 0.9764. A score near to 1 indicates a high degree of differentiation between the two classes (clicked vs. not clicked), and it indicates how well the model distinguishes between them.
 
 v.	The data distribution was analysed to choose the best probabilistic distribution for the naïve Bayes classifier. The results are as shown in figure 4.
@@ -139,10 +148,15 @@ vi.	Observed possible Limitations of Logistic Regression model and Naïve Bayes 
 For Logistic Regression Model:
 
 Despite the logistic regression model's excellent performance measures, a few clear drawbacks exist:
+
 Possibility of Overfitting: A 97% accuracy rate could point to overfitting, a situation in which the model performs remarkably well on training data but might not generalize to new data.
+
 Class Imbalance: High recall and precision indicate a balanced dataset, however these measures may be deceptive if the dataset is unbalanced.
+
 Interpretability: Although the results of logistic regression can be understood, the high performance metrics don't reveal anything about the significance of the features or the underlying data patterns.
+
 Binary Limitation: The use of logistic regression is restricted to issues involving several classes because it can only handle binary outcomes.
+
 The model assumes that the log-odds of the dependent variable and the independent variables have a linear relationship.
 Outliers can impact the decision boundary, therefore it is sensitive to them.
 It needs a substantial sample size in order to produce reliable and consistent results.
